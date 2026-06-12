@@ -1,38 +1,88 @@
-#Project Proposal – Smart Farming Crop Yield Prediction & Recommendation System (Machine Learning improved)
-Project title
-Smart Farming Crop Yield Prediction & Recommendation System
+# Project Proposal
 
-Project category
-Tabular data (supervised regression and recommendation)
+**Project title:** Explainable Machine Learning for Crop Recommendation and Yield Prediction
 
-Team members
-Aster Noel Dsouza – Student ID: 29211
+**Project category:** Tabular data — multi-class classification + regression
 
-David Heleno Bebiano Da Costa Morais – Student ID: 29400
+**Course:** Practical Machine Learning (Applied Machine Learning), GreenDS MSc 2025/2026
 
-300–500 word project description
-Problem statement
-We will investigate how to predict crop yield (kg/ha) from smart‑farming field trial data and soil characteristics, and how to transform these predictions into practical recommendations of the best crop variety for each soil texture class.
- This problem is interesting because small improvements in yield prediction and variety choice can have a significant impact on farmers’ income, resource efficiency, and climate‑resilient agricultural planning. 
- It also provides a realistic, structured setting to apply supervised learning, model evaluation, and basic recommendation logic to tabular data.
+**Team members:**
+- Aster Noel Dsouza — Student ID 29211
+- David Heleno Bebiano Da Costa Morais — Student ID 29400
 
-Dataset
-The project will use field‑trial and soil datasets from our previous DMS project, already organized into raw and processed CSV files (e.g., trials_raw.csv, soil_types_cleaned.csv). 
- The main variables include agronomic management (seed rate, N–P–K fertilization, irrigation, area), categorical descriptors (crop, variety name, soil texture class), and observed yield in kg/ha. 
- To keep the project reproducible, the code also supports a “demo mode” that generates synthetic but realistic data when real CSVs are not available.
+**Repository:** _[(https://github.com/honestfarmer-cod/ML-Smart-Farming-Crop-Yield-Prediction-Recommendation-System)]_
 
-Methods / algorithms
-We will implement and extend an end‑to‑end supervised regression pipeline around a RandomForestRegressor, including preprocessing (label encoding of categorical features, handling missing values), train/test split, model fitting, and prediction.
- We plan to compare the Random Forest with at least one baseline regressor (e.g., linear regression or decision tree) to highlight the trade‑offs between model complexity and performance. 
- On top of the regression model, we will implement a simple recommendation layer that, for each soil texture class, ranks available varieties by predicted yield and selects the best candidate.
+---
 
-Challenges
-Key challenges include ensuring robust preprocessing when some CSV files are missing or partially inconsistent, handling the joint effect of multiple management variables on yield, and avoiding overfitting given the limited size of typical field‑trial datasets. 
- There is also a conceptual challenge in translating point predictions into agronomically meaningful recommendations that remain interpretable for non‑technical users.
+## Project plan
 
-Evaluation and analysis
-Model performance will be evaluated using standard regression metrics, particularly coefficient of determination (R²) and root mean squared error (RMSE) on a held‑out test set.
- We will also analyze feature importance to understand which management and soil variables most influence predicted yield. 
- If time permits, we will perform basic statistical comparisons between models (e.g., paired error analysis) and inspect the distribution of prediction errors to assess model reliability. 
- Finally, we will qualitatively evaluate the generated variety recommendations per soil texture class and discuss limitations and possible extensions.
+### Problem statement
 
+Smart-farming decision support involves two closely related questions: which crop should be planted under given soil and environmental conditions, and what yield can be expected from that decision. This project addresses both tasks using machine learning. The first task is crop recommendation (classification), while the second is yield prediction (regression). Beyond predictive performance, the project will investigate model interpretability and robustness under changing environmental conditions.
+
+The project extends a previous Smart Farming prototype developed during an earlier course and re-implements it using a structured machine-learning workflow aligned with the Practical Machine Learning curriculum.
+
+### Dataset
+
+Track A uses the Crop Recommendation dataset containing 2,200 observations across 22 crop classes with seven environmental and soil features: nitrogen, phosphorus, potassium, temperature, humidity, pH, and rainfall.
+
+Track B uses the Agriculture Crop Yield dataset containing approximately one million observations with information on region, soil type, crop type, weather conditions, irrigation, fertilizer use, and yield.
+
+As a supplementary analysis, OECD crop production data may be used to compare broader trends and support visualization and interpretation.
+
+### Method
+
+A complete scikit-learn pipeline will be developed, including preprocessing, feature transformation, model training, cross-validation, and hyperparameter tuning.
+
+Classification models will include:
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- XGBoost
+
+Regression models will include:
+- Linear Regression
+- Random Forest Regressor
+- XGBoost Regressor
+
+Model interpretation will be explored using permutation importance and SHAP.
+
+As an extension, climate-scenario sensitivity analyses may be performed by modifying temperature and rainfall variables to assess model robustness under changing environmental conditions.
+
+### Challenges
+
+Key challenges include selecting appropriate validation strategies, avoiding data leakage, handling large datasets efficiently, interpreting model behaviour, and assessing how well model conclusions generalize beyond the training data.
+
+### Evaluation
+
+Classification models will be evaluated using:
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
+- ROC-AUC
+
+Regression models will be evaluated using:
+- R²
+- RMSE
+- MAE
+
+Model performance will be compared using cross-validation results and statistical comparisons where appropriate. Additional analyses may examine model sensitivity under different environmental conditions.
+
+---
+
+## Planned Use of Course Concepts
+
+This project is intended to apply several topics covered in the Practical Machine Learning course. We plan to use data preprocessing and machine-learning pipelines to prepare the datasets, followed by classification and regression models as baseline approaches. More advanced methods such as decision trees, random forests, and XGBoost will be explored and compared. Model selection will be supported through cross-validation and hyperparameter tuning, while performance will be assessed using appropriate evaluation metrics for both classification and regression tasks. We also plan to investigate model interpretability techniques to better understand the factors influencing crop recommendations and yield predictions.
+
+## Potential Connection with AVCAD
+
+We are considering using the same overall project theme and some of the same datasets in the Analysis and Visualization of Complex Agro-Environmental Data (AVCAD) course. If feasible, the AVCAD component would focus on exploratory data analysis, statistical analysis, clustering, dimensionality reduction, and visualisation of agro-environmental patterns within the data. Although the datasets and domain may overlap, the analyses, objectives, and final deliverables for the two courses will be developed independently to satisfy the requirements of each course.
+
+## References
+
+- Raschka, S., Liu, Y., & Mirjalili, V. (2022). *Machine Learning with PyTorch and Scikit-Learn*. Packt.
+- Ingle, A. *Crop Recommendation Dataset*. Kaggle.
+- Otieno, S. *Agriculture Crop Yield Dataset*. Kaggle.
+- OECD Agricultural Output – Crop Production Statistics.
