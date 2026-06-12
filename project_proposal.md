@@ -10,7 +10,7 @@
 - Aster Noel Dsouza — Student ID 29211
 - David Heleno Bebiano Da Costa Morais — Student ID 29400
 
-**Repository:** _[(https://github.com/honestfarmer-cod/ML-Smart-Farming-Crop-Yield-Prediction-Recommendation-System)]_
+**Repository:** _https://github.com/honestfarmer-cod/smart-farming-crop-ml_
 
 ---
 
