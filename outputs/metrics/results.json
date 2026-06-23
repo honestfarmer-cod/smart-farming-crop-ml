@@ -1,0 +1,223 @@
+{
+  "track_A": {
+    "best_model": "rf",
+    "best_params": {
+      "clf__max_depth": null,
+      "clf__n_estimators": 200
+    },
+    "cv_macro_f1": {
+      "logreg": 0.9678236006626216,
+      "tree": 0.985222589923089,
+      "hgb": 0.9926237317107596,
+      "rf": 0.9931460226466413
+    },
+    "test_metrics": {
+      "accuracy": 0.9954545454545455,
+      "precision_macro": 0.9956709956709957,
+      "recall_macro": 0.9954545454545454,
+      "f1_macro": 0.9954517027687758
+    },
+    "macro_roc_auc": 1.0,
+    "permutation_importance": {
+      "humidity": 0.32681818181818184,
+      "N": 0.22840909090909095,
+      "rainfall": 0.17568181818181822,
+      "K": 0.16863636363636364,
+      "P": 0.1131818181818182,
+      "ph": 0.010454545454545472,
+      "temperature": 0.006363636363636382
+    },
+    "paired_ttest_logreg_vs_best": {
+      "model_a": "logreg",
+      "model_b": "rf",
+      "mean_a": 0.9678236006626216,
+      "mean_b": 0.9931460226466413,
+      "t_stat": -5.034819680185225,
+      "p_value": 0.007308652214040008
+    }
+  },
+  "track_B_models": {
+    "linreg": {
+      "r2": 0.9149006389469471,
+      "rmse": 0.4950926597759888,
+      "mae": 0.3947120497561253
+    }
+  },
+  "track_B": {
+    "best_model": "linreg",
+    "best_params": {},
+    "cleaning": {
+      "rows_before": 79998,
+      "negative_yields_removed": 16,
+      "rows_after": 79982,
+      "engineered_features": [
+        "rain_per_day"
+      ]
+    },
+    "cv_r2": {
+      "tree": 0.8894796700776342,
+      "rf": 0.9075575943937852,
+      "hgb": 0.913070869188287,
+      "linreg": 0.9139304890384775
+    },
+    "permutation_importance": {
+      "Rainfall_mm": 1.1926800863403026,
+      "Fertilizer_Used": 0.38556901287377043,
+      "Irrigation_Used": 0.24777558109981496,
+      "Temperature_Celsius": 0.015225867272066984,
+      "rain_per_day": 7.454140038611889e-05,
+      "Soil_Type": 1.771526914461363e-05,
+      "Crop": 4.502275946005607e-06,
+      "Weather_Condition": 3.5124359629268296e-06,
+      "Days_to_Harvest": 2.7414374341616645e-06,
+      "Region": -1.3876040370530695e-05
+    }
+  },
+  "climate": {
+    "trackA_flip_rates": [
+      {
+        "scenario": "baseline",
+        "d_temp": 0.0,
+        "rain_mult": 1.0,
+        "flip_rate": 0.0
+      },
+      {
+        "scenario": "+1.5\u00b0C",
+        "d_temp": 1.5,
+        "rain_mult": 1.0,
+        "flip_rate": 0.0
+      },
+      {
+        "scenario": "+2\u00b0C",
+        "d_temp": 2.0,
+        "rain_mult": 1.0,
+        "flip_rate": 0.004545454545454545
+      },
+      {
+        "scenario": "+3\u00b0C",
+        "d_temp": 3.0,
+        "rain_mult": 1.0,
+        "flip_rate": 0.006818181818181818
+      },
+      {
+        "scenario": "-10% rain",
+        "d_temp": 0.0,
+        "rain_mult": 0.9,
+        "flip_rate": 0.01818181818181818
+      },
+      {
+        "scenario": "-20% rain",
+        "d_temp": 0.0,
+        "rain_mult": 0.8,
+        "flip_rate": 0.05909090909090909
+      },
+      {
+        "scenario": "-30% rain",
+        "d_temp": 0.0,
+        "rain_mult": 0.7,
+        "flip_rate": 0.075
+      },
+      {
+        "scenario": "+10% rain",
+        "d_temp": 0.0,
+        "rain_mult": 1.1,
+        "flip_rate": 0.011363636363636364
+      },
+      {
+        "scenario": "+2\u00b0C, -20% rain",
+        "d_temp": 2.0,
+        "rain_mult": 0.8,
+        "flip_rate": 0.07272727272727272
+      }
+    ],
+    "trackA_fragility_plus2C": {
+      "rice": 0.05263157894736842,
+      "lentil": 0.05,
+      "blackgram": 0.0,
+      "chickpea": 0.0,
+      "apple": 0.0,
+      "banana": 0.0,
+      "coffee": 0.0,
+      "coconut": 0.0,
+      "jute": 0.0,
+      "cotton": 0.0,
+      "kidneybeans": 0.0,
+      "maize": 0.0,
+      "mango": 0.0,
+      "grapes": 0.0,
+      "mothbeans": 0.0,
+      "mungbean": 0.0,
+      "orange": 0.0,
+      "muskmelon": 0.0,
+      "papaya": 0.0,
+      "pigeonpeas": 0.0,
+      "pomegranate": 0.0,
+      "watermelon": 0.0
+    },
+    "trackB_yield_shifts": [
+      {
+        "scenario": "baseline",
+        "d_temp": 0.0,
+        "rain_mult": 1.0,
+        "mean_yield_change": 0.0,
+        "pct_change": 0.0
+      },
+      {
+        "scenario": "+1.5\u00b0C",
+        "d_temp": 1.5,
+        "rain_mult": 1.0,
+        "mean_yield_change": 0.029672344143902116,
+        "pct_change": 0.6376926720094788
+      },
+      {
+        "scenario": "+2\u00b0C",
+        "d_temp": 2.0,
+        "rain_mult": 1.0,
+        "mean_yield_change": 0.03956312552520282,
+        "pct_change": 0.8502568960126383
+      },
+      {
+        "scenario": "+3\u00b0C",
+        "d_temp": 3.0,
+        "rain_mult": 1.0,
+        "mean_yield_change": 0.059344688287804225,
+        "pct_change": 1.2753853440189573
+      },
+      {
+        "scenario": "-10% rain",
+        "d_temp": 0.0,
+        "rain_mult": 0.9,
+        "mean_yield_change": -0.27553386950513875,
+        "pct_change": -5.921538541805832
+      },
+      {
+        "scenario": "-20% rain",
+        "d_temp": 0.0,
+        "rain_mult": 0.8,
+        "mean_yield_change": -0.5510677390102775,
+        "pct_change": -11.843077083611664
+      },
+      {
+        "scenario": "-30% rain",
+        "d_temp": 0.0,
+        "rain_mult": 0.7,
+        "mean_yield_change": -0.8266016085154164,
+        "pct_change": -17.764615625417502
+      },
+      {
+        "scenario": "+10% rain",
+        "d_temp": 0.0,
+        "rain_mult": 1.1,
+        "mean_yield_change": 0.2755338695051391,
+        "pct_change": 5.921538541805839
+      },
+      {
+        "scenario": "+2\u00b0C, -20% rain",
+        "d_temp": 2.0,
+        "rain_mult": 0.8,
+        "mean_yield_change": -0.5115046134850747,
+        "pct_change": -10.992820187599026
+      }
+    ]
+  }
+}
