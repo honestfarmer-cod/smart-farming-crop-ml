@@ -123,7 +123,9 @@ def plot_cv_box(cv_df, scoring, title, fname):
     fig, ax = plt.subplots(figsize=(8, 5))
     order = cv_df.groupby("model")["score"].mean().sort_values().index
     data = [cv_df.loc[cv_df.model == m, "score"].values for m in order]
-    ax.boxplot(data, labels=list(order), showmeans=True)
+    ax.boxplot(data, showmeans=True)
+    ax.set_xticks(range(1, len(order) + 1))
+    ax.set_xticklabels(list(order))
     ax.set(title=title, ylabel=scoring, xlabel="model")
     return C.savefig(fig, fname)
 
