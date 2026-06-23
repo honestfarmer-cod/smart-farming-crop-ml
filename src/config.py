@@ -68,4 +68,6 @@ def savefig(fig, name):
     """Save a figure to outputs/figures and report the path."""
     path = FIGURES / name
     fig.savefig(path, dpi=FIG_DPI, bbox_inches="tight")
+    import matplotlib.pyplot as plt
+    plt.close(fig)
     return path
