@@ -7,9 +7,6 @@
 **Category:** Tabular data — multi-class classification + regression, with explainability and a climate-scenario analysis
 **Repository:** https://github.com/honestfarmer-cod/smart-farming-crop-ml  *(update if the repo name differs)*
 
-> Numbers marked `‹run›` are filled automatically by `run_pipeline.py`, which writes
-> `outputs/results_summary.md`. The figures below are produced by run_pipeline.py; the
-> exploratory ones are already committed under `outputs/figures/`.
 
 ---
 
@@ -87,9 +84,9 @@ data leakage and keeps every model directly comparable.
 *justified* rather than asserted:
 
 - *Classification (Track A):* Logistic Regression (transparent linear baseline) → Decision Tree
-  (readable "if rainfall > x" rules) → Random Forest → Gradient Boosting / XGBoost.
+  (readable "if rainfall > x" rules) → Random Forest → HistGradientBoosting.
 - *Regression (Track B):* Linear Regression (a serious baseline, since the EDA suggests an
-  additive target) → Decision Tree → Random Forest → Gradient Boosting / XGBoost.
+  additive target) → Decision Tree → Random Forest → XGBoost.
 
 **Selection, tuning, comparison.** We compare all models with 5-fold CV (macro-F1 for the
 imbalance-agnostic classification view; R² for regression), take the best to `GridSearchCV` for
