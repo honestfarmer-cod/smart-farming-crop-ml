@@ -52,12 +52,11 @@ def classifiers() -> dict:
         "rf":     RandomForestClassifier(n_estimators=300, n_jobs=-1,
                                          random_state=C.SEED),
     }
-    if HAS_XGB:
-        zoo["xgb"] = XGBClassifier(n_estimators=400, max_depth=4, learning_rate=0.1,
-                                   subsample=0.9, colsample_bytree=0.9, n_jobs=-1,
-                                   eval_metric="mlogloss", random_state=C.SEED)
-    else:
-        zoo["hgb"] = HistGradientBoostingClassifier(random_state=C.SEED)
+    # XGBoost's classifier needs integer-encoded targets, but our crop labels are
+    # strings, so for the classification track we use scikit-learn's
+    # HistGradientBoosting (also a gradient-boosting method). XGBoost is used in the
+    # regression track below, where the target is continuous.
+    zoo["hgb"] = HistGradientBoostingClassifier(random_state=C.SEED)
     return zoo
 
 
