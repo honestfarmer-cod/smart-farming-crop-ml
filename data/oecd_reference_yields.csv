@@ -1,0 +1,7 @@
+crop,real_world_yield_t_ha,typical_range_t_ha,note,source
+Maize,5.9,2-11,seed/grain yield; global average,"FAO 2022 / OWID Crop Yields"
+Rice,4.7,2.5-7,paddy yield; global average,"FAO 2022 / OWID Crop Yields"
+Wheat,3.5,3-8,global average,"FAO 2022 / OWID Crop Yields"
+Barley,3.1,2-7,global average,"FAO 2022 / OWID Crop Yields"
+Soybean,2.9,1.5-3.5,global average,"FAO 2022 / OWID Crop Yields"
+Cotton,2.3,1.5-2.7,seed cotton (lint ~0.8),"FAO 2022 / OWID Crop Yields"
