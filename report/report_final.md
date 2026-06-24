@@ -171,10 +171,12 @@ ground.
 
 ## 7. Deployment
 
-A Gradio app (`app/app.py`, ready for Hugging Face Spaces) exposes both models: enter soil and
-climate to get the top-3 crops with a +2 °C stability flag, or enter management conditions to get
-an estimated yield. It loads the exact pipelines saved by `run_pipeline.py`, so the deployed
-behaviour matches the report.
+The two models are deployed as a live Gradio app on Hugging Face Spaces:
+**https://huggingface.co/spaces/asternoeld/smart-farming-crop-ml**
+
+The app exposes both models: enter soil and climate to get the top-3 recommended crops with a
++2 °C climate-stability flag, or enter management conditions to get an estimated yield. It loads
+the exact pipelines saved by `run_pipeline.py`, so the deployed behaviour matches the report.
 
 ## 8. Conclusions
 
