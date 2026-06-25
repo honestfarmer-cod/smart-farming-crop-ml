@@ -198,9 +198,9 @@ limitation we demonstrate rather than hide.
 
 ## 10. Contributions
 
-- **Aster Noel Dsouza** — data preparation and EDA, Track A (recommendation) modelling, the
+- **David Heleno Bebiano Da Costa Morais** — data preparation and EDA, Track A (recommendation) modelling, the
   explainability analysis, climate-scenario design, and report integration.
-- **David Heleno Bebiano Da Costa Morais** — Track B (yield) modelling and error analysis, the
+- **Aster Noel Dsouza** — Track B (yield) modelling and error analysis, the
   OECD/FAO reality check, the Gradio app, and the cross-course (AVCAD) visuals.
 
 Each member also recorded an individual ≤5-minute video walking through their part.
