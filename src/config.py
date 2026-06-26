@@ -1,7 +1,7 @@
 # Use of AI: this file was drafted with an AI assistant and then reviewed
 # and adapted by the team for this project.
 # prompt: "create a configuration module with the dataset paths, a fixed random seed, the feature lists for both tracks, and the temperature and rainfall scenarios"
-# Modifications: <describe the changes you made, e.g. parameter values, fixes>
+# Modifications: 
 
 """
 Configuration values shared across the project: dataset paths, the random seed

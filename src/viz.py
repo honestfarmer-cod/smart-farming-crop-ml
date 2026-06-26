@@ -1,7 +1,7 @@
 # Use of AI: this file was drafted with an AI assistant and then reviewed
 # and adapted by the team for this project.
 # prompt: "create exploratory data analysis plots for both datasets using matplotlib and seaborn"
-# Modifications: <describe the changes you made, e.g. parameter values, fixes>
+# Modifications: 
 
 """
 Exploratory data analysis plots.

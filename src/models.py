@@ -1,7 +1,7 @@
 # Use of AI: this file was drafted with an AI assistant and then reviewed
 # and adapted by the team for this project.
 # prompt: "build scikit-learn pipelines and a set of models (logistic regression, decision tree, random forest, XGBoost) for the classification and regression tracks, with preprocessing inside each pipeline and small hyper-parameter grids"
-# Modifications: <describe the changes you made, e.g. parameter values, fixes>
+# Modifications: 
 
 """
 Model definitions and scikit-learn pipelines for both tracks.

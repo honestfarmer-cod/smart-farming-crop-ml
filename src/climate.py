@@ -1,7 +1,7 @@
 # Use of AI: this file was drafted with an AI assistant and then reviewed
 # and adapted by the team for this project.
 # prompt: "write a climate sensitivity analysis that shifts temperature and scales rainfall, then measures how often the recommended crop changes and how much predicted yield changes"
-# Modifications: <describe the changes you made, e.g. parameter values, fixes>
+# Modifications:
 
 """
 Climate sensitivity analysis.

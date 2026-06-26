@@ -1,7 +1,7 @@
 # Use of AI: this file was drafted with an AI assistant and then reviewed
 # and adapted by the team for this project.
 # prompt: "compute permutation importance and a SHAP summary for the fitted pipelines"
-# Modifications: <describe the changes you made, e.g. parameter values, fixes>
+# Modifications: 
 
 """
 Model explainability.

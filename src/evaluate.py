@@ -1,7 +1,7 @@
 # Use of AI: this file was drafted with an AI assistant and then reviewed
 # and adapted by the team for this project.
 # prompt: "write evaluation helpers: accuracy and macro F1, confusion matrix, one-vs-rest ROC-AUC, R2/RMSE/MAE, predicted-vs-actual and residual plots, a cross-validation comparison and a paired t-test"
-# Modifications: <describe the changes you made, e.g. parameter values, fixes>
+# Modifications: 
 
 """
 Evaluation metrics and diagnostic plots.

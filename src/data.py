@@ -1,7 +1,7 @@
 # Use of AI: this file was drafted with an AI assistant and then reviewed
 # and adapted by the team for this project.
 # prompt: "write functions to load and clean the crop-recommendation and crop-yield datasets, remove impossible negative yields, and add a rainfall-per-day feature"
-# Modifications: <describe the changes you made, e.g. parameter values, fixes>
+# Modifications: 
 
 """
 Loading and cleaning functions for the two datasets.
