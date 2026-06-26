@@ -76,7 +76,7 @@ def estimate_yield(Region, Soil_Type, Crop, Rainfall_mm, Temperature_Celsius,
 with gr.Blocks(title="Smart Farming — Crop & Yield") as demo:
     gr.Markdown("# 🌱 Smart Farming — Crop Recommendation & Yield Prediction")
     gr.Markdown("Explainable, climate-aware decision support. "
-                "Models trained in this repo's notebooks; see the report for details.")
+                "Models trained with run_pipeline.py in the project repo")
 
     with gr.Tab("Crop recommender"):
         gr.Markdown("Enter soil nutrients and local climate to get the best crops, "
