@@ -2,10 +2,14 @@
 ### Explainable, climate-robust machine learning for agro-environmental decision support
 
 **Course:** Practical Machine Learning (Aprendizagem Automática Aplicada) — GreenDS MSc 2025/2026, ISA / ULisboa
+
 **Instructor:** Manuel Campagnolo
+
 **Authors:** Aster Noel Dsouza (29211) · David Heleno Bebiano Da Costa Morais (29400)
+
 **Category:** Tabular data — multi-class classification + regression, with explainability and a climate-scenario analysis
-**Repository:** https://github.com/honestfarmer-cod/smart-farming-crop-ml 
+
+**Repository:** https://github.com/honestfarmer-cod/smart-farming-crop-ml  
 
 
 ---
