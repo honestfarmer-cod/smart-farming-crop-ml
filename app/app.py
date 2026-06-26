@@ -1,7 +1,7 @@
 # Use of AI: this file was drafted with an AI assistant and then reviewed
 # and adapted by the team for this project.
 # prompt: "build a Gradio app with two tabs - a crop recommender that shows the top crops and whether the top pick survives +2C, and a yield estimator - loading the saved scikit-learn pipelines"
-# Modifications: <describe the changes you made>
+# Modifications:
 
 """Gradio app — Smart Farming crop recommender + yield estimator.
 
