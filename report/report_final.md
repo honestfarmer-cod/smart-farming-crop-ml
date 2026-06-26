@@ -5,7 +5,7 @@
 **Instructor:** Manuel Campagnolo
 **Authors:** Aster Noel Dsouza (29211) · David Heleno Bebiano Da Costa Morais (29400)
 **Category:** Tabular data — multi-class classification + regression, with explainability and a climate-scenario analysis
-**Repository:** https://github.com/honestfarmer-cod/smart-farming-crop-ml  *(update if the repo name differs)*
+**Repository:** https://github.com/honestfarmer-cod/smart-farming-crop-ml
 
 
 ---
